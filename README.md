@@ -4,6 +4,14 @@ DeployAFS
 UNC Chapel hill provides students and faculty with AFS space, including a `public_html` directory that is served to the web.  This script allows for easy deployment of static files to the `public_html` folder.
 
 ## Usage
+
+copy the deployafs file to a folder in your home directory named /bin/.  Add this folder to your PATH by adding the following statement to your `.profile` (or `.bashrc`):
+```
+PATH=$PATH:~/bin/
+```
+
+Then type `source .profile` (or `.bashrc`) and the command `deployafs` should be available to you.
+
 ```
 deployafs <file/folder1 to be deployed> <destination file/folder name> [AFS username]
 ```
