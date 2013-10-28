@@ -19,8 +19,10 @@ deployafs <file/folder1 to be deployed> <destination file/folder name> [AFS user
 For example, for user eah13 to deploy the `_site` local folder to the `blog` remote folder:
 
 ```
-deployafs _site blog eah13
+deployafs _site/ blog/ eah13
 ```
+
+**Note the trailing slashes**
 
 The new site will be visible at http://www.unc.edu/~eah13/blog/
 
